@@ -83,8 +83,8 @@ export class Web3Enabled {
         {
           walletName: 'walletLink',
           rpcUrl: this.alchemyEndpoint,
-          appName: '88mph',
-          appLogoUrl: 'https://88mph.app/docs/img/88mph-logo-dark.png'
+          appName: 'AzSwap',
+          appLogoUrl: 'https://mckurz.mypinata.cloud/ipfs/QmZZgfLw5MWfL7on2Zfvdc3u4eA6LktpZMpirAgtRHPCbQ'
         },
         {
           walletName: 'fortmatic',
