@@ -162,7 +162,7 @@ export class MphLiquidityComponent implements OnInit {
     for (let i = 0; i < this.blocks.length; i++) {
       queryString +=
       `t${i}: pair(
-        id: "0xb2c29e311916a346304f83aa44527092d5bd4f0f",
+        id: "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506",
         block: {
           number: ${this.blocks[i]}
         }

@@ -189,7 +189,7 @@ export class LossProvisionComponent implements OnInit {
       // populate asset USD value data arrays
       let days = (this.timeseries.getLatestUTCDate() - this.FIRST_INDEX + this.constants.DAY_IN_SEC) / this.constants.DAY_IN_SEC;
       for (let i in this.data) {
-        if (this.data[i].label && this.data[i].label != "0xb1abaac351e06d40441cf2cd97f6f0098e6473f2") { // if it's not the weird chartjs thing
+        if (this.data[i].label && this.data[i].label != "0x1BBeA3Fa282dc0199E7dCea34E152FA955fd3c21") { // if it's not the weird chartjs thing
 
           // fetch historical token prices from coingecko API
           let apiResult: number[][] = [];
@@ -207,7 +207,7 @@ export class LossProvisionComponent implements OnInit {
             }
           }
 
-        } else if (this.data[i].label == "0xb1abaac351e06d40441cf2cd97f6f0098e6473f2") {
+        } else if (this.data[i].label == "0x1BBeA3Fa282dc0199E7dCea34E152FA955fd3c21f2") {
           // crvHUSD
           for (let j in this.timestamps) {
             this.data[i].dataUSD.push(1);
