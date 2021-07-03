@@ -181,7 +181,7 @@ export class HistoricalAssetTvlComponent implements OnInit {
       // populate the dataUSD array
       let days = (this.timeseries.getLatestUTCDate() - this.FIRST_INDEX + this.constants.DAY_IN_SEC) / this.constants.DAY_IN_SEC;
       for (let pool in this.data) {
-        if (this.data[pool].label && this.data[pool].label !== "0x1BBeA3Fa282dc0199E7dCea34E152FA955fd3c21") {
+        if (this.data[pool].label && this.data[pool].label !== "0x71482F8cD0e956051208603709639FA28cBc1F33") {
 
           // fetch historical token prices from coingecko API
           let apiResult: number[][] = [];
@@ -196,7 +196,7 @@ export class HistoricalAssetTvlComponent implements OnInit {
               this.data[pool].dataUSD.push(0);
             }
           }
-        } else if (this.data[pool].label === "0x1BBeA3Fa282dc0199E7dCea34E152FA955fd3c21") {
+        } else if (this.data[pool].label === "0x71482F8cD0e956051208603709639FA28cBc1F33") {
           for (let t in this.timestamps) {
             this.data[pool].dataUSD.push(1);
           }

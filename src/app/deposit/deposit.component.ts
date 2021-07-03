@@ -17,7 +17,7 @@ const mockUser = {
   totalMPHEarned: 1e3,
   pools: [
     {
-      address: '0x1BBeA3Fa282dc0199E7dCea34E152FA955fd3c21',
+      address: '0x71482F8cD0e956051208603709639FA28cBc1F33',
       deposits: [
         {
           nftID: 1,
@@ -31,7 +31,7 @@ const mockUser = {
       ]
     },
     {
-      address: '0x1BBeA3Fa282dc0199E7dCea34E152FA955fd3c21',
+      address: '0x71482F8cD0e956051208603709639FA28cBc1F33',
       deposits: [
         {
           nftID: 1,
