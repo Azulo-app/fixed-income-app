@@ -9,7 +9,8 @@
   <div class="navbar-user d-md-none">
     <div class="d-block">
       <button class="card-link mr-2" type="button" routerLink="/rewards">
-        {{mphBalance.toFormat(4)}}<img src="./assets/img/icon-default.png" class="ml-1" alt="MPH token logo" width="18px">
+        {{mphBalance.toFormat(4)}}
+        <img src="./assets/img/download.svg" class="ml-1" alt="MPH token logo" width="0">
       </button>
       <div class="btn-group">
         <button type="button" name="web3Connect" class="card-link" (click)="connectWallet()">
@@ -72,53 +73,27 @@
     <div class="row">
       <div class="col">
         <a class="text-white text-left mb-3 d-block mt-3" [routerLink]="">
-          <img class="logo" src="./assets/img/logo.png" class="mr-2" alt="88mph logo" width="42px">
-          <span class="d-inline-block">88mph</span>
+          <img class="logo" src="./assets/img/download.svg" class="mr-2" alt="88mph logo" width="142px">
+          <span class="d-inline-block">Azulo</span>
         </a>
 
         <!-- Navigation -->
         <ul class="navbar-nav" ngbNav [activeId]="route.url">
           <li class="nav-item" ngbNavItem="/deposits">
-            <a class="nav-link text-white" routerLink="deposits" ngbNavLink>
+            <a class="nav-link" routerLink="deposits" ngbNavLink>
               Fixed-interest rate bonds
             </a>
           </li>
           <li class="nav-item" ngbNavItem="/bonds">
-            <a class="nav-link text-white" routerLink="bonds" ngbNavLink>
+            <a class="nav-link" routerLink="bonds" ngbNavLink>
               Floating-rate bonds
             </a>
           </li>
           <li class="nav-item" ngbNavItem="/zero-coupon-bonds">
-            <a class="nav-link text-white" routerLink="zero-coupon-bonds" ngbNavLink>
+            <a class="nav-link" routerLink="zero-coupon-bonds" ngbNavLink>
               Zero coupon bonds
             </a>
           </li>
-          <li class="nav-item" ngbNavItem="/vesting">
-            <a class="nav-link text-white" routerLink="vesting" ngbNavLink>
-              MPH vesting
-            </a>
-          </li>
-          <li class="nav-item" ngbNavItem="/rewards">
-            <a class="nav-link text-white" routerLink="rewards" ngbNavLink>
-              Stake MPH
-            </a>
-          </li>
-          <li class="nav-item" ngbNavItem="/farming">
-            <a class="nav-link text-white" routerLink="farming" ngbNavLink>
-              Liquidity mining
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="https://snapshot.org/#/88mph.eth" target="_blank">
-              Governance
-            </a>
-          </li>
-          
-          <li class="nav-item" ngbNavItem="/stats">
-            <a class="nav-link text-white" routerLink="stats" ngbNavLink>
-              Stats
-            </a>
-          </li>   
           <li class="nav-item">
             <a class="nav-link small" href="#sidebarPartners" data-toggle="collapse" role="button" aria-expanded="false"
               aria-controls="sidebarPartners">
@@ -197,27 +172,54 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" ngbNavItem="/vesting" style="display: none;">
+            <a class="nav-link" routerLink="vesting" ngbNavLink>
+              MPH vesting
+            </a>
+          </li>
+          <li class="nav-item" ngbNavItem="/rewards" style="display: none;">
+            <a class="nav-link" routerLink="rewards" ngbNavLink>
+              Stake MPH
+            </a>
+          </li>
+          <li class="nav-item" ngbNavItem="/farming" style="display: none;">
+            <a class="nav-link" routerLink="farming" ngbNavLink>
+              Liquidity mining
+            </a>
+          </li>
+          <li class="nav-item" style="display: none;">
+            <a class="nav-link" href="https://snapshot.org/#/88mph.eth" target="_blank">
+              Governance
+            </a>
+          </li>
+
+          <li class="nav-item" ngbNavItem="/stats" style="display: none;">
+            <a class="nav-link" routerLink="stats" ngbNavLink>
+              Stats
+            </a>
+          </li>
+
+          <li class="nav-item" style="display: none;">
             <a class="nav-link small" href="https://docs.88mph.app/" target="_blank">
               Documentations
             </a>
-          </li>                 
-          <li class="nav-item">
+          </li>
+          <li class="nav-item" style="display: none;">
             <a class="nav-link small" href="https://forum.88mph.app/" target="_blank">
               Forum
             </a>
           </li>
-          <li class="nav-item" ngbNavItem="/funding">
+          <li class="nav-item" ngbNavItem="/funding" style="display: none;">
             <a class="nav-link small" routerLink="funding" ngbNavLink>
               Funding
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="display: none;">
             <a class="nav-link small" href="https://88mph.app/fm/" target="_blank">
               88.0 FM 📻
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="display: none;">
             <a class="nav-link" href="#sidebarAudits" data-toggle="collapse" role="button" aria-expanded="false"
               aria-controls="sidebarAudits">
               Security
@@ -263,8 +265,8 @@
               </ul>
             </div>
           </li>
-          
-          <li class="nav-item">
+
+          <li class="nav-item" style="display: none;">
             <a class="nav-link" href="#sidebarCN" data-toggle="collapse" role="button" aria-expanded="false"
               aria-controls="sidebarAudits">
               加入中国社区
@@ -296,7 +298,7 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item mb-6">
+          <li class="nav-item mb-6" style="display: none;">
             <a class="nav-link" href="#sidebarMore" data-toggle="collapse" role="button" aria-expanded="false"
               aria-controls="sidebarMore">
               More
@@ -374,7 +376,7 @@
             </div>
           </li>
         </ul>
-        <div class="btn-group-toggle fixed-bottom fixed-bottom-switch bg-dark py-3 px-4 border-top" data-toggle="buttons">
+        <div class="btn-group-toggle fixed-bottom fixed-bottom-switch bg-dark py-3 px-4 border-top" data-toggle="buttons" style="display: none">
           <ng-container *ngFor="let themeName of app.themes">
             <button class="card-link mr-3" (click)="app.setTheme(themeName)">
               <input type="radio" name="colorScheme" value={{themeName}} [checked]="app.themeName === themeName">

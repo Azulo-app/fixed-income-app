@@ -22,7 +22,7 @@ export class Web3Enabled {
     this.fortmaticKey = 'pk_test_5C24F45B36039600';
     this.alchemyEndpoint = 'https://eth-rinkeby.alchemyapi.io/v2/Cn_HWOsJ-tzQ6FyCDenshmthXI35W9Ix';
     this.alchemyWSEndpoint = 'wss://eth-rinkeby.ws.alchemyapi.io/v2/Cn_HWOsJ-tzQ6FyCDenshmthXI35W9Ix';
-    this.networkID = 1;
+    this.networkID = 4;
     this.state = {
       address: null,
       wallet: {

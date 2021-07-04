@@ -6,15 +6,15 @@
     <div class="header-body border-0 p-0">
       <div class="row align-items-end">
         <div class="col">
-          <h1 class="mb-2">Earn fixed-rate interest on your crypto and MPH rewards.</h1>
-          <p class="text-muted font-weight-bold mb-5">Get started by adding your crypto assets to the pools below. <a class="text-purple" href="https://docs.88mph.app/" target="_blank">
+          <h1 class="mb-2">Earn a fixed-rate interest on your trust assets.</h1>
+          <p class="text-muted font-weight-bold mb-5">Select a pool below to start earning yield on your trust assets. <a class="text-purple" href="https://docs.88mph.app/" target="_blank">
             Help <i class="fe fe-external-link"></i>
           </a></p>
           <div class="card-deck my-4">
             <div class="card mb-4 mb-lg-0">
               <div class="card-body pt-0">
                 <!-- Title -->
-                <h5 class="text-uppercase text-amber mt-n3 bg-dark pl-3">
+                <h5 class="text-uppercase text-amber mt-n3 bg-light pl-3">
                   Deposits balance
                   <button type="button" class="btn btn-sm btn-link p-0 text-white" placement="top"
                     ngbTooltip="Current total deposits in USD">
@@ -36,7 +36,7 @@
             <div class="card mb-4 mb-lg-0">
               <div class="card-body pt-0">
                 <!-- Title -->
-                <h5 class="text-uppercase text-amber mt-n3 bg-dark pl-3">
+                <h5 class="text-uppercase text-amber mt-n3 bg-light pl-3">
                   Interest balance
                   <button type="button" class="btn btn-sm btn-link p-0 text-white" placement="top"
                     ngbTooltip="Total fixed-rate interest earned from current deposits">
@@ -53,7 +53,7 @@
             <div class="card mb-4 mb-lg-0">
               <div class="card-body pt-0">
                 <!-- Title -->
-                <h5 class="text-uppercase text-amber mt-n3 bg-dark pl-3">
+                <h5 class="text-uppercase text-amber mt-n3 bg-light pl-3">
                   MPH earned
                   <button type="button" class="btn btn-sm btn-link p-0 text-white" placement="top"
                     ngbTooltip="Depositors get rewarded with MPH tokens that can be staked to earn rewards (protocol fees, harvested tokens, etc)">
@@ -133,7 +133,7 @@
                       <div class="ml-3">
 
                         <!-- Heading -->
-                        <h4 class="font-weight-normal mb-1">{{userPool.poolInfo.stablecoinSymbol}}</h4>
+                        <h4 class="font-weight-normal mb-1" style="color: #6e84a3">{{userPool.poolInfo.stablecoinSymbol}}</h4>
 
                         <!-- Text -->
                         <small class="text-muted">{{userPool.poolInfo.protocol}}</small>
@@ -239,7 +239,7 @@
 
       <!-- Explore fixed rate opportunities -->
       <div class="card" id="fixedRateOpportunities">
-        <h2 class="mt-n3 bg-dark mb-0 mx-3 pl-3">Explore fixed-interest rate opportunities</h2>
+        <h2 class="mt-n3 bg-light mb-0 mx-3 pl-3">Explore fixed-interest rate opportunities</h2>
         <div class="table-responsive mb-0">
           <table class="table table-sm table-nowrap card-table">
             <thead>
@@ -282,7 +282,7 @@
                     <div class="ml-3">
 
                       <!-- Heading -->
-                      <h4 class="font-weight-normal mb-1">{{pool.stablecoinSymbol}}</h4>
+                      <h4 class="font-weight-normal mb-1" style="color: #6e84a3">{{pool.stablecoinSymbol}}</h4>
 
                       <!-- Text -->
                       <small class="text-muted">{{pool.protocol}}</small>

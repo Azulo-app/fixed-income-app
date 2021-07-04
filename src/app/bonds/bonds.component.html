@@ -6,7 +6,7 @@
     <div class="header-body border-0 p-0">
       <div class="row align-items-end">
         <div class="col">
-          <h1 class="mb-2">Fund a floating-rate bonds and earn MPH rewards.</h1>
+          <h1 class="mb-2">Invest your trust assets into floating rate bonds</h1>
           <p class="text-muted font-weight-bold mb-5">Learn more in the FAQ below or on our <a class="text-purple" href="https://docs.88mph.app/" target="_blank">
             Help center <i class="fe fe-external-link"></i>
           </a>
@@ -15,7 +15,7 @@
             <div class="card mb-4 mb-lg-0">
               <div class="card-body pt-0">
                 <!-- Title -->
-                <h5 class="text-uppercase text-amber mt-n3 bg-dark pl-3">
+                <h5 class="text-uppercase text-amber mt-n3 bg-light pl-3">
                   You funded
                   <button type="button" class="btn btn-sm btn-link p-0 text-white" placement="top"
                     ngbTooltip="The amount of debt your active bonds have funded.">
@@ -24,7 +24,7 @@
                 </h5>
 
                 <!-- Heading -->
-                <h2 class="mb-0 glowing pl-3">
+                <h2 class="mb-0 glowing pl-3" >
                   ${{totalDeficitFundedUSD.toFormat(4)}}
                 </h2>
               </div>
@@ -32,7 +32,7 @@
             <div class="card mb-4 mb-lg-0">
               <div class="card-body pt-0">
                 <!-- Title -->
-                <h5 class="text-uppercase text-amber mt-n3 bg-dark pl-3">
+                <h5 class="text-uppercase text-amber mt-n3 bg-light pl-3">
                   You earn on
                   <button type="button" class="btn btn-sm btn-link p-0 text-white" placement="top"
                     ngbTooltip="The amount of deposits you're earning interest on.">
@@ -49,7 +49,7 @@
             <div class="card mb-4 mb-lg-0">
               <div class="card-body pt-0">
                 <!-- Title -->
-                <h5 class="text-uppercase text-amber mt-n3 bg-dark pl-3">
+                <h5 class="text-uppercase text-amber mt-n3 bg-light pl-3">
                   Interest paid out
                   <button type="button" class="btn btn-sm btn-link p-0 text-white" placement="top"
                     ngbTooltip="The amount of interests you have earned so far from your active bonds. Interests will be automatically sent to your wallet when the depositors withdraw their deposits.">
@@ -68,7 +68,7 @@
             <div class="card mb-4 mb-lg-0">
               <div class="card-body pt-0">
                 <!-- Title -->
-                <h5 class="text-uppercase text-amber mt-n3 bg-dark pl-3">
+                <h5 class="text-uppercase text-amber mt-n3 bg-light pl-3">
                   MPH earned
                   <button type="button" class="btn btn-sm btn-link p-0 text-white" placement="top"
                     ngbTooltip="Bond buyers earn MPH tokens that can be staked to earn rewards (protocol fees, harvested tokens, etc)">
@@ -226,7 +226,7 @@
 
       <!-- Deficit funding opportunities -->
       <div class="card mb-6">
-        <h2 class="mt-n3 bg-dark mb-4 mx-3 pl-3">Fund floating-rate bonds</h2>
+        <h2 class="mt-n3 bg-light mb-4 mx-3 pl-3">Fund floating-rate bonds</h2>
         <div class="card-body">
           <h2 class="display-2 glowing text-center" *ngIf="loadingCalculator">
             Loading...
@@ -296,7 +296,7 @@
                 </h5>
                 <h2 class="display-2 mb-0 glowing">
                   {{estimatedROI.plus(mphROI).toFormat(4)}}%
-                  
+
                 </h2>
                 <h5 class="mb-0 mb-md-4 text-white">
                   ({{estimatedROI.toFormat(4)}}% in {{selectedPool?.stablecoinSymbol}} + {{mphROI.toFormat(4)}}% in MPH)
@@ -328,7 +328,7 @@
                       Estimated profit
                     </h5>
                     <h2 class="mb-1 glowing">
-                      ${{estimatedProfitUSD.plus(mphRewardAmount.times(mphPriceUSD)).toFormat(4)}} 
+                      ${{estimatedProfitUSD.plus(mphRewardAmount.times(mphPriceUSD)).toFormat(4)}}
                     </h2>
                     <h5 class="mb-3 text-white">{{estimatedProfitToken.toFormat(4)}} {{selectedPool?.stablecoinSymbol}} + {{mphRewardAmount.toFormat(4)}} MPH
                     </h5>
@@ -420,7 +420,7 @@
       </div>
       <!-- FAQ -->
       <div class="card">
-        <h2 class="mt-n3 bg-dark mb-4 mx-3 pl-3" id="faq">Frequently asked questions</h2>
+        <h2 class="mt-n3 bg-light mb-4 mx-3 pl-3" id="faq">Frequently asked questions</h2>
         <div class="card-body">
           <div class="row mb-6">
             <div class="col-12 col-lg-6">

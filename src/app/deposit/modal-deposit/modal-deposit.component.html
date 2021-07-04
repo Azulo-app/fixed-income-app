@@ -1,3 +1,4 @@
+
 <!-- Modal: deposit money -->
 <!-- IDEA: modal modalDeposit -->
 <div class="modal-dialog modal-dialog-vertical" role="document">
@@ -9,20 +10,20 @@
             <div class="col-auto mr-auto">
               <button class="btn btn-link text-white pl-0" type="button" name="button" data-dismiss="modal"
                 aria-label="Close" (click)="activeModal.dismiss()">
-                <i class="fe fe-arrow-left h2 mb-0"></i>
+                <i class="fe fe-arrow-left h2 mb-0" style="color: white"></i>
               </button>
             </div>
           </div>
           <div class="row justify-content-center no-gutters">
             <div class="col-12 col-lg-10 pt-3 pb-5">
-              <h1 class="display-4 text-center">
+              <h1 class="display-4 text-center" style="color:white">
                 How much would you like to deposit?
               </h1>
               <div class="card">
                 <div class="card-body">
                   <div class="form-row">
                     <div class="form-group col-12 col-lg-12 mb-0">
-                      <label>Lending pool</label>
+                      <label style="color:white">Lending pool</label>
                       <div class="input-group input-group-lg mb-2">
                         <select class="custom-select" (change)="selectPool($event.target.value)">
                           <option value={{pool.name}} *ngFor="let pool of poolList"
@@ -34,7 +35,7 @@
                   </div>
                   <div class="form-row">
                     <div class="form-group col mb-0">
-                      <label>Deposit amount ({{selectedDepositToken}})</label>
+                      <label style="color: white">Deposit amount ({{selectedDepositToken}})</label>
                       <div class="input-group mb-2">
                         <input type="text" class="form-control form-control-lg" placeholder="0.00" aria-label=""
                           aria-describedby="" [value]="depositAmount.toFixed()"
@@ -65,7 +66,7 @@
                   </small>
                   <div class="form-group row no-gutters">
                     <div class="col-12 col-lg-8">
-                      <label for="colFormLabel" class="col-form-label">Preset lending duration</label>
+                      <label for="colFormLabel" class="col-form-label" style="color:white">Preset lending duration</label>
                       <div>
                         <ng-container *ngFor="let period of DEPOSIT_PERIOD_PRESETS">
                           <ng-container *ngIf="period >= minDepositPeriod && maxDepositPeriod >= period">
@@ -76,7 +77,7 @@
                       </div>
                     </div>
                     <div class="col-12 col-lg-4">
-                      <label class="col-form-label">Or custom duration</label>
+                      <label class="col-form-label" style="color: white">Or custom duration</label>
                       <div class="input-group mb-3">
                         <input type="tel" min="7" data-mask="#,##0" data-mask-reverse="true" id="lock-period"
                           class="form-control text-right" [value]="depositTimeInDays"
@@ -193,7 +194,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <button class="card-link btn-block" type="button" (click)="deposit()" [disabled]="!canContinue()">
+                  <button class="card-link btn-block" type="button" (click)="deposit()" [disabled]="!canContinue()" style="color:white">
                     Continue
                   </button>
                 </div>
@@ -209,7 +210,7 @@
                   <div class="row">
                     <div class="col-auto">
 
-                      <h2 class="text-center">
+                      <h2 class="text-center" style="color: white">
                         <1>
                       </h2>
 
@@ -217,7 +218,7 @@
                     <div class="col ml-n2 d-flex align-items-center">
 
                       <!-- Heading -->
-                      <p class="mb-0 font-weight-bold">
+                      <p class="mb-0 font-weight-bold" style="color:white">
                         Deposit plain stablecoins or tokens - USDC/UNI/yCRV/crvSBTC - which will be put into DeFi yield
                         protocols such as Compound, Aave, and yEarn.
                       </p>
@@ -229,7 +230,7 @@
                   <div class="row">
                     <div class="col-auto text-center">
 
-                      <h2 class="text-center">
+                      <h2 class="text-center" style="color: white">
                         <2>
                       </h2>
 
@@ -237,7 +238,7 @@
                     <div class="col ml-n2 d-flex align-items-center">
 
                       <!-- Heading -->
-                      <p class="mb-0 font-weight-bold">
+                      <p class="mb-0 font-weight-bold" style="color: white">
                         After depositing in the pool, you receive a ERC-721 non-fungible token that represents your
                         deposit. You may transfer it to another account, or even sell it on NFT markets such as OpenSea.
                       </p>
@@ -249,7 +250,7 @@
                   <div class="row">
                     <div class="col-auto text-center">
 
-                      <h2 class="text-center">
+                      <h2 class="text-center" style="color: white">
                         <3>
                       </h2>
 
@@ -257,7 +258,7 @@
                     <div class="col ml-n2 d-flex align-items-center">
 
                       <!-- Heading -->
-                      <p class="mb-0 font-weight-bold">
+                      <p class="mb-0 font-weight-bold" style="color: white">
                         By depositing into 88mph, you earn MPH tokens, which is continuously vested to you.
                       </p>
 
@@ -268,7 +269,7 @@
                   <div class="row">
                     <div class="col-auto text-center">
 
-                      <h2 class="text-center">
+                      <h2 class="text-center" style="color: white">
                         <4>
                       </h2>
 
@@ -276,7 +277,7 @@
                     <div class="col ml-n2 d-flex align-items-center">
 
                       <!-- Heading -->
-                      <p class="mb-0 font-weight-bold">
+                      <p class="mb-0 font-weight-bold" style="color: white">
                         By staking your MPH, you can claim your share of rewards from the 88mph reward pool where
                         the protocol fees and yield-farming rewards are collected.
                       </p>
@@ -288,7 +289,7 @@
                   <div class="row">
                     <div class="col-auto text-center">
 
-                      <h2 class="text-center">
+                      <h2 class="text-center" style="color: white">
                         <5>
                       </h2>
 
@@ -296,7 +297,7 @@
                     <div class="col ml-n2 d-flex align-items-center">
 
                       <!-- Heading -->
-                      <p class="mb-0 font-weight-bold">
+                      <p class="mb-0 font-weight-bold" style="color: white">
                         When your lending period is over, you withdraw your principal together with the fixed-rate
                         interest
                         earned. When you withdraw, you need to return
