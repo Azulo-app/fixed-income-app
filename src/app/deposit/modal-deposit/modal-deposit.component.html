@@ -34,7 +34,7 @@
                   </div>
                   <div class="form-row">
                     <div class="form-group col mb-0">
-                      <label>Deposit amount ({{selectedDepositToken}})</label>
+                      <label style="color: white">Deposit amount ({{selectedDepositToken}})</label>
                       <div class="input-group mb-2">
                         <input type="text" class="form-control form-control-lg" placeholder="0.00" aria-label=""
                           aria-describedby="" [value]="depositAmount.toFixed()"
@@ -76,7 +76,7 @@
                       </div>
                     </div>
                     <div class="col-12 col-lg-4">
-                      <label class="col-form-label">Or custom duration</label>
+                      <label class="col-form-label" style="color: white">Or custom duration</label>
                       <div class="input-group mb-3">
                         <input type="tel" min="7" data-mask="#,##0" data-mask-reverse="true" id="lock-period"
                           class="form-control text-right" [value]="depositTimeInDays"
